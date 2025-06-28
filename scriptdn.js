@@ -9,7 +9,7 @@ function closeCustomAlert() {
 }
 
 const accounts = {
-  NQA12A12025: '@Jd8WqZ#7nTpLm3',
+  DQA12A12025: '@Jd8WqZ#7nTpLm3',
   NTM12A12025: '@xF2r9G#2aYhPq1',
   BBA12A12025: 'Q8#jYt@3S5KwM9s',
   PQTA12A12025: 'zG@4tF#W9qRsT1n',
