@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>Kí Ức Tuổi Thanh Xuân</title>
+    <link rel = "icon" href = "https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/icon.jfif?v=1722004463896">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta property="og:title" content="Kí ức tuổi thanh xuân">
+    <meta property="og:description" content="12A1 THPT Nguyễn Thái Bình, Lâm Đồng 2022 - 2025">
+    <meta property="og:image" content = "">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div>
+        <audio src = "audio\nho.mp3" autoplay loop></audio>
+    </div>
+    <audio id = "myAudio" loop autoplay>
+        <source src="audio\nho.mp3" type = "audio/mpeg">
+        <source src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/T%E1%BB%AA%20%C4%90%C3%93%20-%20PHAN%20M%E1%BA%A0NH%20QU%E1%BB%B2NH%20-%20M%E1%BA%AET%20BI%E1%BA%BEC%20OST.mp3?v=1722087858345" type = "audio/mpeg">
+    </audio>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class = "nav-item" data-content="home">Trang Chủ</a></li>
+                <li><a href="#" class = "nav-item" data-content="events">Sự Kiện</a></li>
+                <li><a href="#" class = "nav-item" data-content="teacher">Giáo Viên</a></li>
+                <li><a href="#" class = "nav-item" data-content="members">Thành Viên</a></li>
+                <li><a href="#" class = "nav-item" data-content="about">Về Chúng Tôi</a></li>
+            </ul>
+            <button id="login-btn">Đăng Nhập</button>
+            <button id="loginButton" style="display: none;">Đăng Nhập</button>
+            <div id="LoginButton">
+                <img src="" id="user-avatar" alt="User Avatar" style="display: none;">
+            </div>
+            <button id="logoutButton" style="display: none;">Đăng xuất</button>
+            <div class="loading-overlay" id="loadingOverlay">
+                <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/loading.gif?v=1722004456762" alt="Loading...">
+            </div>
+            <div class="loading-overlay1" id="loadingOverlay1">
+                <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/loading2.gif?v=1722004452980" alt="Loading...">
+            </div>
+        </nav>
+    </header>
+    <section class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p>Chào mừng các bạn đến với lớp 12A1 niên khóa 2024 - 2025 của trường THPT Nguyễn Thái Bình</p>
+            </div>
+            <div class="carousel-item">
+                <p>Đây là nơi sẽ lưu giữ những kỉ niệm và hồi ức đáng nhớ của lớp chúng ta</p>
+            </div>
+            <div class="carousel-item">
+                <p>Sản phẩm chỉ được phát triển trong khoảng 1 năm nên không thể tránh khỏi những sai sót và hạn chế</p>
+            </div>
+            <div class="carousel-item">
+                <p>Mong rằng các bạn sẽ thông cảm bỏ qua và đón nhận sản phẩm này</p>
+            </div>
+        </div>
+    </section>
+    <div id="home" class="content active">
+        <h1>Trang Chủ</h1>
+        <p>Chào mừng bạn đến với trang chủ.</p>
+        <section class="hero">
+        </section>
+        <div id="home-logged-out">
+            Bạn không xem được nội dung này.
+        </div>
+        <div id="home-logged-in" style = "display: none;">
+            <div>
+              <section class="hero2">
+              </section>
+            </div>
+            <div class="carousel-home">
+              <div class="button-home-prev">&#x276E;</div>
+                <div class="carousel-track-container-home">
+                  <ul class="carousel-track-home">
+                    <li class="carousel-item-home"></li>
+                    <li class="carousel-item-home"></li>
+                    <li class="carousel-item-home"></li>
+                    <li class="carousel-item-home"></li>
+                    <li class="carousel-item-home"></li>
+                  </ul>
+                </div>
+              <div class="button-home-next">&#x276F;</div>
+            </div>
+          <div class = "carousel2-home">
+            <div class="carousel1-home">
+              <img src = "https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/giao%20di%E1%BB%87n%202-04.png?v=1731742629492">
+              <div class = "carousel3-home">
+                <div class="button1-home-prev">&#x276E;</div>
+                  <div class="carousel1-track-container-home">
+                    <ul class="carousel1-track-home">
+                      <li class="carousel1-item-home"></li>
+                      <li class="carousel1-item-home"></li>
+                      <li class="carousel1-item-home"></li>
+                      <li class="carousel1-item-home"></li>
+                      <li class="carousel1-item-home"></li>
+                    </ul>
+                  </div>
+                <div class="button1-home-next">&#x276F;</div>
+              </div>
+            </div>
+        </div>
+        <div class = "bodytkb">
+            <div class="containertkb">
+                <header>
+                    <h1>🎓 Thời Khóa Biểu & Lịch Thi 🎓</h1>
+                </header>
+                <section class="scheduletkb">
+                    <h2>📅 Thời Khóa Biểu</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Thứ</th>
+                                <th>Tiết</th>
+                                <th>Môn học</th>
+                                <th>Giáo viên</th>
+                                <th>Giờ học</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan = "5">Thứ 2</td>
+                                <td> Tiết 1 </td>
+                                <td>Chào Cờ</td>
+                                <td>Cô Soan</td>
+                                <td>7:00 - 8:00</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 2 </td>
+                                <td>Toán</td>
+                                <td>Cô Mến</td>
+                                <td>8:05 - 8:50</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 3 </td>
+                                <td>Ngữ Văn</td>
+                                <td>Cô Lan</td>
+                                <td>9:10 - 9:55</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 4 </td>
+                                <td>Ngữ Văn</td>
+                                <td>Cô Lan</td>
+                                <td>10:00 - 10:45</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 5 </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan = "5">Thứ 3</td>
+                                <td> Tiết 1 </td>
+                                <td>Quốc Phòng</td>
+                                <td>Thầy Ph Rây</td>
+                                <td>7:15 - 8:00</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 2 </td>
+                                <td>Thể Dục</td>
+                                <td>Thầy Vương</td>
+                                <td>8:05 - 8:50</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 3 </td>
+                                <td>Toán</td>
+                                <td>Cô Mến</td>
+                                <td>9:10 - 9:55</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 4 </td>
+                                <td>Hóa Học</td>
+                                <td>Thầy Khoa</td>
+                                <td>10:00 - 10:45</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 5 </td>
+                                <td>Lịch Sử</td>
+                                <td>Cô K'Jiên</td>
+                                <td>10:50 - 11:35</td>
+                            </tr>
+                            <tr>
+                                <td rowspan = "5">Thứ 4</td>
+                                <td> Tiết 1 </td>
+                                <td>Vật Lý</td>
+                                <td>Cô Trí</td>
+                                <td>7:15 - 8:00</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 2 </td>
+                                <td>Lịch Sử</td>
+                                <td>Cô K'Jiên</td>
+                                <td>8:05 - 8:50</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 3 </td>
+                                <td>GDKT&PL</td>
+                                <td>Cô Nga</td>
+                                <td>9:10 - 9:55</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 4 </td>
+                                <td>Anh Văn</td>
+                                <td>Cô Thủy</td>
+                                <td>10:00 - 10:45</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 5 </td>
+                                <td>Anh Văn</td>
+                                <td>Cô Thủy</td>
+                                <td>10:50 - 11:35</td>
+                            </tr>
+                            <tr>
+                                <td rowspan = "5">Thứ 5</td>
+                                <td> Tiết 1 </td>
+                                <td>Anh Văn</td>
+                                <td>Cô Thủy</td>
+                                <td>7:15 - 8:00</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 2 </td>
+                                <td>Tin Học</td>
+                                <td>Thầy Quang</td>
+                                <td>8:05 - 8:50</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 3 </td>
+                                <td>Toán</td>
+                                <td>Cô Mến</td>
+                                <td>9:10 - 9:55</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 4 </td>
+                                <td>HĐGD&TN</td>
+                                <td>Thầy Tùng</td>
+                                <td>10:00 - 10:45</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 5 </td>
+                                <td>HĐGD&TN</td>
+                                <td>Thầy Tùng</td>
+                                <td>10:50 - 11:35</td>
+                            </tr>
+                            <tr>
+                                <td rowspan = "5">Thứ 6</td>
+                                <td> Tiết 1 </td>
+                                <td>Ngữ Văn</td>
+                                <td>Cô Lan</td>
+                                <td>7:15 - 8:00</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 2 </td>
+                                <td>Vật Lý</td>
+                                <td>Cô Trí</td>
+                                <td>8:05 - 8:50</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 3 </td>
+                                <td>Hóa Học</td>
+                                <td>Thầy Khoa</td>
+                                <td>9:10 - 9:55</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 4 </td>
+                                <td>Thể Dục</td>
+                                <td>Thầy Vương</td>
+                                <td>10:00 - 10:45</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 5 </td>
+                                <td>GDKT&PL</td>
+                                <td>Cô Nga</td>
+                                <td>10:50 - 11:35</td>
+                            </tr>
+                            <tr>
+                                <td rowspan = "5">Thứ 7</td>
+                                <td> Tiết 1 </td>
+                                <td>Hóa Học</td>
+                                <td>Thầy Khoa</td>
+                                <td>7:15 - 8:00</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 2 </td>
+                                <td>Tin Học</td>
+                                <td>Thầy Quang</td>
+                                <td>8:05 - 8:50</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 3 </td>
+                                <td>Vật Lý</td>
+                                <td>Cô Trí</td>
+                                <td>9:10 - 9:55</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 4 </td>
+                                <td>Toán</td>
+                                <td>Cô Mến</td>
+                                <td>10:00 - 10:45</td>
+                            </tr>
+                            <tr>
+                                <td> Tiết 5 </td>
+                                <td>SHL</td>
+                                <td>Cô Mến</td>
+                                <td>10:50 - 11:35</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Lịch thi -->
+                <section class="examtkb-schedule">
+                    <h2>📝 Lịch Thi</h2>
+                    <ul>
+                        <li>📌 Toán: 20/11/2024 - 7:30 AM</li>
+                        <li>📌 Văn: 22/11/2024 - 7:30 AM</li>
+                        <li>📌 Anh: 25/11/2024 - 9:00 AM</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        </div>
+    </div>
+      <div id="events" class="content">
+      <h1>Sự Kiện</h1>
+      <p>Thông tin về các sự kiện.</p>
+      <div id = "events-logged-out">
+        Bạn không xem được nội dung này
+      </div>
+      <div id = "events-logged-in" style = "display:none;">
+        <h1 style = "text-align: center" class = "rainbow-gradient-text">Timeline</h1>
+        <div class = "nentimeline">
+          <div class="timeline">
+    <div class="eventtl">
+        <div class="contenttl">
+            <div class="icontl"><i class="fa-solid fa-calendar-days"></i></div>
+            <img src="https://via.placeholder.com/150" alt="5/9/2022" class="preview-img">
+            <div class="time">Ngày 05/09/2022</div>
+            <h3>Sự kiện 1</h3>
+            <p>Mô tả chi tiết về sự kiện này. Nội dung có thể bao gồm các thông tin quan trọng.</p>
+        </div>
+    </div>
+    <div class="eventtl">
+        <div class="contenttl">
+            <div class="icontl"><i class="fa-solid fa-calendar-days"></i></div>
+            <img src="https://via.placeholder.com/150" alt="Ảnh sự kiện 2" class="preview-img">
+            <div class="time">Ngày 05/02/2024</div>
+            <h3>Sự kiện 2</h3>
+            <p>Mô tả ngắn gọn về sự kiện tiếp theo trong timeline.</p>
+        </div>
+    </div>
+    <div class="eventtl">
+        <div class="contenttl">
+            <div class="icontl"><i class="fa-solid fa-calendar-days"></i></div>
+            <img src="https://via.placeholder.com/150" alt="Ảnh sự kiện 3" class="preview-img">
+            <div class="time">Ngày 15/03/2024</div>
+            <h3>Sự kiện 3</h3>
+            <p>Mô tả chi tiết về sự kiện tiếp theo. Có thể bao gồm thêm các thông tin bổ sung.</p>
+        </div>
+    </div>
+    <div class="eventtl">
+      <div class="contenttl">
+          <div class="icontl"><i class="fa-solid fa-calendar-days"></i></div>
+          <img src="https://via.placeholder.com/150" alt="Ảnh sự kiện 2" class="preview-img">
+          <div class="time">Ngày 05/02/2024</div>
+          <h3>Sự kiện 4</h3>
+          <p>Mô tả ngắn gọn về sự kiện tiếp theo trong timeline.</p>
+      </div>
+    </div>
+    <div class="eventtl">
+      <div class="contenttl">
+          <div class="icontl"><i class="fa-solid fa-calendar-days"></i></div>
+          <img src="https://via.placeholder.com/150" alt="Ảnh sự kiện 3" class="preview-img">
+          <div class="time">Ngày 15/03/2024</div>
+          <h3>Sự kiện 5</h3>
+          <p>Mô tả chi tiết về sự kiện tiếp theo. Có thể bao gồm thêm các thông tin bổ sung.</p>
+      </div>
+    </div>
+   <div class="eventtl">
+      <div class="contenttl">
+        <div class="icontl"><i class="fa-solid fa-calendar-days"></i></div>
+        <img src="https://via.placeholder.com/150" alt="Ảnh sự kiện 2" class="preview-img">
+        <div class="time">Ngày 05/02/2024</div>
+        <h3>Sự kiện 6</h3>
+        <p>Mô tả ngắn gọn về sự kiện tiếp theo trong timeline.</p>
+      </div>
+    </div>
+    <div class="eventtl">
+      <div class="contenttl">
+          <div class="icontl"><i class="fa-solid fa-calendar-days"></i></div>
+          <img src="https://via.placeholder.com/150" alt="Ảnh sự kiện 3" class="preview-img">
+          <div class="time">Ngày 15/03/2024</div>
+          <h3>Sự kiện 7</h3>
+          <p>Mô tả chi tiết về sự kiện tiếp theo. Có thể bao gồm thêm các thông tin bổ sung.</p>
+      </div>
+    </div>
+   <div class="eventtl">
+      <div class="contenttl">
+        <div class="icontl"><i class="fa-solid fa-calendar-days"></i></div>
+        <img src="https://via.placeholder.com/150" alt="Ảnh sự kiện 2" class="preview-img">
+        <div class="time">Ngày 05/02/2024</div>
+        <h3>Sự kiện 8</h3>
+        <p>Mô tả ngắn gọn về sự kiện tiếp theo trong timeline.</p>
+      </div>
+    </div>
+    <div class="eventtl">
+      <div class="contenttl">
+          <div class="icontl"><i class="fa-solid fa-calendar-days"></i></div>
+          <img src="https://via.placeholder.com/150" alt="Ảnh sự kiện 3" class="preview-img">
+          <div class="time">Ngày 15/03/2024</div>
+          <h3>Sự kiện 9</h3>
+          <p>Mô tả chi tiết về sự kiện tiếp theo. Có thể bao gồm thêm các thông tin bổ sung.</p>
+      </div>
+    </div>
+   <div class="eventtl">
+      <div class="contenttl">
+        <div class="icontl"><i class="fa-solid fa-calendar-days"></i></div>
+        <img src="https://via.placeholder.com/150" alt="Ảnh sự kiện 2" class="preview-img">
+        <div class="time">Ngày 05/02/2024</div>
+        <h3>Sự kiện 10</h3>
+        <p>Mô tả ngắn gọn về sự kiện tiếp theo trong timeline.</p>
+      </div>
+    </div>
+  </div>
+        </div>
+        <h1 style = "text-align: center" class = "rainbow-gradient-text">Liệu bạn còn nhớ</h1>  
+        <div class = "videobody">
+          <div class="video-container">
+            <div class="video-box">
+              <iframe src="https://drive.google.com/file/d/1p8d0yMYrbRhEWCmwEJnUPvM1HU70D6XT/preview" width="640" height="360" allow="autoplay"></iframe>
+            <div class="video-title">Tổ 1</div>
+            </div>
+            <div class="video-box">
+              <iframe src="https://drive.google.com/file/d/1pmiSy1ERhs52bmzYXT8qWBh86GOHzeTC/preview" width="640" height="360" allow="autoplay"></iframe>
+              <div class="video-title">Tổ 2</div>
+            </div>
+            <div class="video-box">
+              <iframe src="https://drive.google.com/file/d/1KEaVkvSRc6DsHHaP68TnxtICf0HqWOIV/preview" width="640" height="360" allow="autoplay"></iframe>
+              <div class="video-title">Tổ 3</div>
+            </div>
+            <div class="video-box">
+              <iframe src="https://drive.google.com/file/d/1rgQnwpClvc_T3Cw_WwQbtaNrrUGzQQCn/preview" width="640" height="360" allow="autoplay"></iframe>
+              <div class="video-title">Tổ 4</div>
+            </div>
+          </div>
+        </div>
+        <h1 style = "text-align: center" class = "rainbow-gradient-text">Chắc bạn đã quên</h1>  
+        <div class = "videobody">
+          <div class="video-container">
+            <div class="video-box">
+            <iframe src="https://drive.google.com/file/d/1uCzFg604Mq2f6K3TIaTkN2sAQV-q6Zcw/preview" width="640" height="360" allow="autoplay"></iframe>
+            <div class="video-title">Tổ 1</div>
+            </div>
+            <div class="video-box">
+              <iframe src="https://drive.google.com/file/d/1fiYnqkPqOzX4mK_Hgua1F6r89amBsDPa/preview" width="640" height="360" allow="autoplay"></iframe>
+              <div class="video-title">Tổ 2</div>
+            </div>
+            <div class="video-box">
+              <iframe src="https://drive.google.com/file/d/1liXLNj8V1ENb3RB-H7kXpG72QkkjZnuK/preview" width="640" height="360" allow="autoplay"></iframe>
+              <div class="video-title">Tổ 3</div>
+            </div>
+            <div class="video-box">
+              <iframe src="https://drive.google.com/file/d/1KDFC8IKE3OH1_-7kC6X581f14DNM-pyu/preview" width="640" height="360" allow="autoplay"></iframe>
+              <div class="video-title">Tổ 4</div>
+            </div>
+          </div>
+        </div>
+        <h1 style = "text-align:center" class = "rainbow-gradient-text"> Hãy nhớ các bạn là một tập thể như thế nào  </h1>
+        <div class="gallery3d">
+        <span style="--i:1">
+          <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoJien.png?v=1722008800215" />
+        </span>
+        <span style="--i:2">
+          <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoLTBL.jpg?v=1722008800306" />
+        </span>
+        <span style="--i:3">
+          <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNMT.png?v=1722008801981" />
+        </span>
+        <span style="--i:4">
+          <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNTM2.jpg?v=1722008809920" />
+        </span>
+        <span style="--i:5">
+          <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/464927103_8775926372469800_7920309586826609002_n.jpg?v=1731502851082" />
+        </span>
+        <span style="--i:6">
+          <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoPTT.png?v=1722008814495" />
+        </span>
+        <span style="--i:7">
+          <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoVMT.PNG?v=1722008818777" />
+        </span>
+        <span style="--i:8">
+          <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/ThayBVN.jpg?v=1722008820812" />
+        </span>
+        <span style="--i:9">
+          <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z6029334527885_110427096b568b3e8f9226555a46a99f.jpg?v=1731502425406" />
+        </span>
+        <span style="--i:10">
+          <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/ThayNHQ.jpg?v=1722008828763" />
+        </span>
+      </div>
+        <h1>
+           Mục 2
+        </h1>
+        <div class="containermuc2">
+          <div style="--img: url(https://codetheworld.io/wp-content/uploads/2024/05/Jiyan.png);" data-text="Event-1" class="boxmuc2 box-1"></div>
+          <div style="--img: url(https://codetheworld.io/wp-content/uploads/2024/05/Yinlin.png);" data-text="Event-2" class="boxmuc2 box-2"></div>
+          <div style="--img: url(https://codetheworld.io/wp-content/uploads/2024/05/Encore.png);" data-text="Event-3" class="boxmuc2 box-3"></div>
+          <div style="--img: url(https://codetheworld.io/wp-content/uploads/2024/05/Jianxin.png);" data-text="Event-4" class="boxmuc2 box-4"></div>
+          <div style="--img: url(https://codetheworld.io/wp-content/uploads/2024/05/Verina.png);" data-text="Event-5" class="boxmuc2 box-5"></div>
+        </div>
+        <h1 class = "rainbow-gradient-text" style = "text-align: center">
+          Một số hình ảnh đáng nhớ
+        </h1>
+        <h2 class = "rainbow-gradient-text" style = "text-align: center">
+           Lớp 10
+        </h2>
+        <div class = "bodymuc3">
+          <div class="containermuc3">
+        <div class="slidemuc3">
+          <div class="itemmuc3" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/20%20thang%2010%20_6.jpg?v=1731484192257);">
+            <div class="contentmuc3">
+              <div class="namemuc3">Ngày 20/10/2022</div>
+              <div class="desmuc3">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc3" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4039521264868_28da1fd478ebaad97f66d40c5c197016.jpg?v=1731486270862);">
+            <div class="contentmuc3">
+              <div class="namemuc3">Ngày 14/1/2023</div>
+              <div class="desmuc3">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc3" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4165140231979_7f5a26df739eb985b9a405e66e746089.jpg?v=1731485015812);">
+            <div class="contentmuc3">
+              <div class="namemuc3">Ngày 8/3/2023</div>
+              <div class="desmuc3">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc3" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4205981593918_c7ae0469cc1de90f9b81da99a8454605.jpg?v=1731486907331);">
+            <div class="contentmuc3">
+              <div class="namemuc3">Ngày 23/3/2023</div>
+              <div class="desmuc3">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc3" style="background-image: url( https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4375054553702_fd6dc9086827f372720d5f1c182f7672.jpg?v=1731486464901);">
+            <div class="contentmuc3">
+              <div class="namemuc3">Ngày 25/5/2023</div>
+              <div class="desmuc3">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttonsmuc3">
+          <button class="buttonprevmuc3"></button>
+          <button class="buttonnextmuc3"></button>
+        </div>
+      </div>
+        </div>
+      <h2 class = "rainbow-gradient-text" style = "text-align: center">
+           Lớp 11
+        </h2>
+        <div class = "bodymuc31">
+          <div class="containermuc31">
+        <div class="slidemuc31">
+          <div class="itemmuc31" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/20%20thang%2010%20_6.jpg?v=1731484192257);">
+            <div class="contentmuc31">
+              <div class="namemuc31">Ngày 20/10/2022</div>
+              <div class="desmuc31">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc31" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4039521264868_28da1fd478ebaad97f66d40c5c197016.jpg?v=1731486270862);">
+            <div class="contentmuc31">
+              <div class="namemuc31">Ngày 14/1/2023</div>
+              <div class="desmuc31">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc31" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4165140231979_7f5a26df739eb985b9a405e66e746089.jpg?v=1731485015812);">
+            <div class="contentmuc31">
+              <div class="namemuc31">Ngày 8/3/2023</div>
+              <div class="desmuc31">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc31" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4205981593918_c7ae0469cc1de90f9b81da99a8454605.jpg?v=1731486907331);">
+            <div class="contentmuc31">
+              <div class="namemuc31">Ngày 23/3/2023</div>
+              <div class="desmuc31">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc31" style="background-image: url( https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4375054553702_fd6dc9086827f372720d5f1c182f7672.jpg?v=1731486464901);">
+            <div class="contentmuc31">
+              <div class="namemuc31">Ngày 25/5/2023</div>
+              <div class="desmuc31">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttonsmuc31">
+          <button class="buttonprevmuc31"></button>
+          <button class="buttonnextmuc31"></button>
+        </div>
+      </div>
+    </div>
+        <h2 class = "rainbow-gradient-text" style = "text-align: center">
+           Lớp 12
+        </h2>
+        <div class = "bodymuc32">
+          <div class="containermuc32">
+        <div class="slidemuc32">
+          <div class="itemmuc32" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/20%20thang%2010%20_6.jpg?v=1731484192257);">
+            <div class="contentmuc32">
+              <div class="namemuc32">Ngày 20/10/2022</div>
+              <div class="desmuc32">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc32" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4039521264868_28da1fd478ebaad97f66d40c5c197016.jpg?v=1731486270862);">
+            <div class="contentmuc32">
+              <div class="namemuc32">Ngày 14/1/2023</div>
+              <div class="desmuc32">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc32" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4165140231979_7f5a26df739eb985b9a405e66e746089.jpg?v=1731485015812);">
+            <div class="contentmuc32">
+              <div class="namemuc32">Ngày 8/3/2023</div>
+              <div class="desmuc32">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc32" style="background-image: url(https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4205981593918_c7ae0469cc1de90f9b81da99a8454605.jpg?v=1731486907331);">
+            <div class="contentmuc32">
+              <div class="namemuc32">Ngày 23/3/2023</div>
+              <div class="desmuc32">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+          <div class="itemmuc32" style="background-image: url( https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z4375054553702_fd6dc9086827f372720d5f1c182f7672.jpg?v=1731486464901);">
+            <div class="contentmuc32">
+              <div class="namemuc32">Ngày 25/5/2023</div>
+              <div class="desmuc32">
+                Đang cập nhật
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttonsmuc32">
+          <button class="buttonprevmuc32"></button>
+          <button class="buttonnextmuc32"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <div id="members" class="content">
+        <h1>Thành Viên</h1>
+        <p>Thông tin về các thành viên.</p>
+        <div id="members-logged-out">
+            Bạn không xem được nội dung này.
+        </div>
+        <div id="members-logged-in" style = "display: none;">
+            <div class = "member12a1">
+                <h1>Giới Thiệu Thành Viên</h1>
+            </div>
+            <section class="member-grid12a1">
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/hsnam1.png?v=1722010328279" alt="Member 1" title = "Biện Bình An">
+                    <div class="member-info12a1">
+                        <h3>Biện Bình An</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/hsnam1.png?v=1722010328279" alt="Member 2" title = "Phạm Quang Tuấn An">
+                    <div class="member-info12a1">
+                        <h3>Phạm Quang Tuấn An</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/VoLeNgocBich.png?v=1722010380515" alt="Member 3" title = "Võ Lê Ngọc Bích">
+                    <div class="member-info12a1">
+                        <h3>Võ Lê Ngọc Bích</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/hsnam1.png?v=1722010328279" alt="Member 4" title = "Hoàng Trọng Đại">
+                    <div class="member-info12a1">
+                        <h3>Hoàng Trọng Đại</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>"Nếu tôi quyết làm gì, tôi sẽ làm nó <b>một cách thật ngoạn mục</b> hoặc tôi sẽ không làm gì cả"</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/ToNhutThaiDan.png?v=1722010374332" alt="Member 5" title = "Tô Nhựt Thái Đan">
+                    <div class="member-info12a1">
+                        <h3>Tô Nhựt Thái Đan</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/hsnam1.png?v=1722010328279" alt="Member 6" title = "Nguyễn Hữu Đạt">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Hữu Đạt</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NongPhungBichHang.png?v=1722010349738" alt="Member 7" title = "Nông Phùng Bích Hằng">
+                    <div class="member-info12a1">
+                        <h3>Nông Phùng Bích Hằng</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/MaiBaoGiaHan.png?v=1722010348636" alt="Member 8" title = "Mai Bảo Gia Hân">
+                    <div class="member-info12a1">
+                        <h3>Mai Bảo Gia Hân</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/hsnam1.png?v=1722010328279" alt="Member 9" title = "Nguyễn Hoàng Hiệp">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Hoàng Hiệp</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/TranThiNgocHieu.png?v=1722010378681" alt="Member 10" title = "Trần Thị Ngọc Hiếu">
+                    <div class="member-info12a1">
+                        <h3>Trần Thị Ngọc Hiếu</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/ThaiPhamKhanhHuyen.png?v=1722010375374" alt="Member 11" title = "Thái Phạm Khánh Huyền">
+                    <div class="member-info12a1">
+                        <h3>Thái Phạm Khánh Huyền</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/LocKietHuong.png?v=1722010346771" alt="Member 12" title = "Lộc Kiệt Hương">
+                    <div class="member-info12a1">
+                        <h3>Lộc Kiệt Hương</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/hsnam1.png?v=1722010328279" alt="Member 13" title = "Nguyễn Doãn Khoa">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Doãn Khoa</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/hsnam1.png?v=1722010328279" alt="Member 14" title = "Nguyễn Thành Lộc">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Thành Lộc</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/HoangThiKhanhLy.png?v=1722010327124" alt="Member 15" title = "Hoàng Thị Khánh Ly">
+                    <div class="member-info12a1">
+                        <h3>Hoàng Thị Khánh Ly</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NguyenNgocDieuLy.png?v=1722010355761" alt="Member 16" title = "Nguyễn Ngọc Diệu Ly">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Ngọc Diệu Ly</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/LeNguyenThuyNga.png?v=1722010345167" alt="Member 17" title = "Lê Nguyễn Thúy Nga">
+                    <div class="member-info12a1">
+                        <h3>Lê Nguyễn Thúy Nga</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NguyenHoangMinhNgan.png?v=1722010354112" alt="Member 18" title="Nguyễn Hoàng Minh Ngân">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Hoàng Minh Ngân</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/HuynhLuongBaoNgoc.png?v=1722010339732" alt="Member 19" title="Huỳnh Lương Bảo Ngọc">
+                    <div class="member-info12a1">
+                        <h3>Huỳnh Lương Bảo Ngọc</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NguyenHoangBaoNgoc.png?v=1722010352010" alt="Member 20" title="Nguyễn Hoàng Bảo Ngọc">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Hoàng Bảo Ngọc</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>"Khi bạn khao khát một điều gì đó, cả vũ trụ sẽ hợp lực giúp bạn đạt được điều đó"</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/TranHuynhBaoNgoc.png?v=1722010377365" alt="Member 21" title="Trần Huỳnh Bảo Ngọc">
+                    <div class="member-info12a1">
+                        <h3>Trần Huỳnh Bảo Ngọc</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z6029544657562_c52a0b32b35f2b343a0638a44ff99300.jpg?v=1731505708472" alt="Member 22" title="Nguyễn Huỳnh Nhật Nguyên">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Huỳnh Nhật Nguyên</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/PhanHoangMinhNguyet.png?v=1722010370094" alt="Member 23" title="Phan Hoàng Minh Nguyệt">
+                    <div class="member-info12a1">
+                        <h3>Phan Hoàng Minh Nguyệt</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NguyenNhatThuNhi.png?v=1722010358833" alt="Member 24" title="Nguyễn Nhật Thu Nhi">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Nhật Thu Nhi</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NguyenQuynhNhu.png?v=1722010362137" alt="Member 25" title="Nguyễn Quỳnh Như">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Quỳnh Như</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/PhamPhuongNhu.png?v=1722010368808" alt="Member 26" title="Phạm Phương Như">
+                    <div class="member-info12a1">
+                        <h3>Phạm Phương Như</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NguyenNgocPhung.png?v=1722010357300" alt="Member 27" title="Nguyễn Ngọc Phụng">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Ngọc Phụng</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/hsnam1.png?v=1722010328279" alt="Member 28" title="Huỳnh Thanh Phước">
+                    <div class="member-info12a1">
+                        <h3>Huỳnh Thanh Phước</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NguyenThaoQuyen.png?v=1722010363998" alt="Member 29" title="Nguyễn Thảo Quyên">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Thảo Quyên</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/BuiThiHongThanh.png?v=1722010384081" alt="Member 30" title="Bùi Thị Hồng Thanh">
+                    <div class="member-info12a1">
+                        <h3>Bùi Thị Hồng Thanh</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NguyenPhuongThao.png?v=1722010360698" alt="Member 31" title="Nguyễn Phương Thảo">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Phương Thảo</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NguyenThiThanhThuy.png?v=1722010365348" alt="Member 32" title="Nguyễn Thị Thanh Thùy">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Thị Thanh Thùy</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/HuynhThiThuThuy.png?v=1722010343856" alt="Member 33" title="Huỳnh Thị Thu Thủy">
+                    <div class="member-info12a1">
+                        <h3>Huỳnh Thị Thu Thủy</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NongThiThanhThuy.png?v=1722010350692" alt="Member 34" title="Nông Thị Thanh Thúy">
+                    <div class="member-info12a1">
+                        <h3>Nông Thị Thanh Thúy</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/NguyenThiUyenThi.png?v=1722010366644" alt="Member 35" title="Nguyễn Thị Uyên Thy">
+                    <div class="member-info12a1">
+                        <h3>Nguyễn Thị Uyên Thy</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/PhanLeKimTrang.png?v=1722010371684" alt="Member 36" title="Phan Lê Kim Trang">
+                    <div class="member-info12a1">
+                        <h3>Phan Lê Kim Trang</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/DinhHuyenTran.png?v=1722010325234" alt="Member 37" title="Đinh Huyền Trân">
+                    <div class="member-info12a1">
+                        <h3>Đinh Huyền Trân</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/hsnam1.png?v=1722010328279" alt="Member 38" title="Hoàng Thanh Tuấn">
+                    <div class="member-info12a1">
+                        <h3>Hoàng Thanh Tuấn</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/HuynhThiThanhTuyen.png?v=1722010341724" alt="Member 39" title="Huỳnh Thị Thanh Tuyền">
+                    <div class="member-info12a1">
+                        <h3>Huỳnh Thị Thanh Tuyền</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/VuongBachTuyet.png?v=1722010382166" alt="Member 40" title="Vương Bạch Tuyết">
+                    <div class="member-info12a1">
+                        <h3>Vương Bạch Tuyết</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/TaKhanhVy.png?v=1722010373241" alt="Member 41" title="Tạ Khánh Vy">
+                    <div class="member-info12a1">
+                        <h3>Tạ Khánh Vy</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/DaoThiNhuY.png?v=1722010323974" alt="Member 42" title="Đào Thị Như Ý">
+                    <div class="member-info12a1">
+                        <h3>Đào Thị Như Ý</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+                <div class="member-card12a1">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/PhamPhuongHaiYen.png?v=1722010367731" alt="Member 43" title="Phạm Phương Hải Yến">
+                    <div class="member-info12a1">
+                        <h3>Phạm Phương Hải Yến</h3>
+                        <p>Trường THPT Nguyễn Thái Bình, Lâm Đồng</p>
+                        <p>Đang cập nhật...</p>
+                        <a href="#">Chi tiết</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="about" class="content">
+        <h1>Về Chúng Tôi</h1>
+        <p>Giới thiệu về chúng tôi.</p>
+        <div id="about-logged-out">
+            Bạn không xem được nội dung này.
+        </div>
+        <div id="about-logged-in" style = "display: none;">
+            <p style = "text-align: justify">
+                Lớp 12A1, là một trong những lớp học của trường THPT Nguyễn Thái Bình, được cô chủ nhiệm Nguyễn Thị Mến dẫn dắt. Đây là một tập thể đoàn kết, năng động và sáng tạo, với nhiều thành tích nổi bật trong học tập và hoạt động ngoại khóa. </br>
+                Cô Nguyễn Thị Mến, giáo viên chủ nhiệm của lớp, là một người thầy tận tụy và đầy nhiệt huyết. Với nhiều năm kinh nghiệm trong nghề, cô đã truyền đạt kiến thức một cách hiệu quả và khơi dậy niềm đam mê học tập trong mỗi học sinh. Cô luôn lắng nghe, chia sẻ và giúp đỡ các em không chỉ trong học tập mà còn trong cuộc sống hàng ngày. Sự quan tâm và tận tâm của cô đã tạo nên một môi trường học tập thân thiện, gần gũi và đầy hứng khởi. </br>
+                Lớp 12A1 tự hào với nhiều bạn học sinh giỏi và tích cực tham gia các hoạt động của trường. Tập thể lớp luôn đạt được những thành tích cao trong các kỳ thi học kỳ, thi học sinh giỏi cấp trường, cấp tỉnh. Bên cạnh đó, lớp cũng rất năng nổ trong các hoạt động ngoại khóa như văn nghệ, thể thao, từ thiện, và các cuộc thi sáng tạo khoa học kỹ thuật. </br>
+                Tinh thần đoàn kết và sự hỗ trợ lẫn nhau là điểm nổi bật của 12A1. Các bạn luôn sẵn sàng giúp đỡ nhau trong học tập cũng như trong cuộc sống. Những buổi học nhóm, những giờ ôn bài cùng nhau không chỉ giúp các em nâng cao kiến thức mà còn gắn kết tình bạn thêm bền chặt.</br>
+                Với sự dẫn dắt tài tình của cô Nguyễn Thị Mến và tinh thần học tập, hoạt động hăng say của các bạn học sinh, lớp 12A1 hứa hẹn sẽ tiếp tục gặt hái nhiều thành công và để lại dấu ấn đẹp trong lòng thầy cô và bạn bè.
+            </p>
+            <h1 style = "text-align: center;"> <a href = "https://love.tsonit.com/camon12a1vahengaplai" target = "_blank"> Lời chúc gửi đến các bạn !</a></h1>
+        </div>
+    </div>
+
+    <div id="contact" class="content">
+        <h1>Liên Hệ</h1>
+        <p>Thông tin liên hệ.</p>
+    </div>
+
+    <div id="teacher" class="content">
+        <h1>Đội ngũ giáo viên</h1>
+        <div id="teacher-logged-out">
+            Bạn vui lòng đăng nhập để xem được nội dung này!
+        </div>
+        <div><div id="teacher-logged-in" style = "display: none;">
+            <div class = "teacher-title">
+                <b> Giáo viên chủ nhiệm </b>
+            </div>
+            <section class="teacher-hero">
+                <div class="hero-content">
+                    <h1>Người gieo mầm tri thức!</h1>
+                    <h2>Cô Nguyễn Thị Mến</h2>
+                    <h3>( nịch nem : má Mến )</h3>
+                    <p>"Toán học không chỉ là ngôn ngữ của vũ trụ mà còn là cầu nối giữa trí tuệ và thực tế, giúp con người hiểu sâu hơn về bản chất của thế giới xung quanh. Giáo viên Toán,  với sự kiên nhẫn và đam mê, là những người mở ra cánh cửa tri thức, dẫn dắt học sinh bước vào hành trình khám phá vô tận, nơi mà mỗi bài toán đều chứa đựng những bí mật kỳ diệu và cơ hội phát triển tư duy sáng tạo."</p>
+                </div>
+                <div>
+                    <img class = "icon-hero" src = "https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/homeroom.jfif?v=1722008690679">
+                </div>
+                <div class="hero-image">
+                    <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNTM3.png?v=1722008736208" alt="Nguyễn Thị Mến" title = "Cô Nguyễn Thị Mến">
+                </div>
+            </section>
+            <div class = "teacher-title">
+                <b> Giáo viên bộ môn</b>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <button id = "dropbtn" class="dropbtn">Chọn lớp</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showInfo(event,'class10','Lớp 10')">Lớp 10</a>
+                        <a href="#" onclick="showInfo(event,'class11','Lớp 11')">Lớp 11</a>
+                        <a href="#" onclick="showInfo(event,'class12','Lớp 12')">Lớp 12</a>
+                    </div>
+                </div>
+                <div id="class10" class="info">
+                    <div class="gvhighlighted-text">Lớp 10</div>
+                    <div>
+                        <div class="carousel1">
+                            <button class="carousel1-button left-button" id="prevButton">❮</button>
+                            <div class="carousel1-container">
+                                <div class="carousel1-slide" id="carouselSlide">
+                                    <div class="member-card">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoJien.png?v=1722008800215" alt="Cô Kon Sơ K'Jiên" title = "Cô Kon Sơ K'Jiên" >
+                                            <div class="member-info1">
+                                                <h3>Cô Kon Sơ K'Jiên</h3>
+                                                <p1>Giáo viên môn Lịch Sử</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNTM2.jpg?v=1722008809920" alt="Cô Nguyễn Thị Mến" title = "Cô Nguyễn Thị Mến">
+                                            <div class="member-info1">
+                                                <h3>Cô Nguyễn Thị Mến</h3>
+                                                <p1>Giáo viên môn Toán</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoVMT.PNG?v=1722008818777" alt="Cô Võ Minh Trí" title = "Cô Võ Minh Trí">
+                                            <div class="member-info1">
+                                                <h3>Cô Võ Minh Trí</h3>
+                                                <p1>Giáo viên môn Vật Lý</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z6029334527885_110427096b568b3e8f9226555a46a99f.jpg?v=1731502425406" alt="Thầy Đinh Tiến Khoa" title = "Thầy Đinh Tiến Khoa">
+                                            <div class="member-info1">
+                                                <h3>Thầy Đinh Tiến Khoa</h3>
+                                                <p1>Giáo viên môn Hóa Học</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoLTBL.jpg?v=1722008800306" alt="Cô Lê Thị Bích Lan" title = "Cô Lê Thị Bích Lan">
+                                            <div class="member-info1">
+                                                <h3>Cô Lê Thị Bích Lan</h3>
+                                                <p1>Giáo viên môn Ngữ Văn</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNMT.png?v=1722008801981" alt="Cô Nguyễn Minh Thủy" title = "Cô Nguyễn Minh Thủy">
+                                            <div class="member-info1">
+                                                <h3>Cô Nguyễn Minh Thủy</h3>
+                                                <p1>Giáo viên môn Tiếng Anh</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/ThayBVN.jpg?v=1722008820812" alt="Thầy Biện Văn Nam" title = "Thầy Biện Văn Nam">
+                                            <div class="member-info1">
+                                                <h3>Thầy Biện Văn Nam</h3>
+                                                <p1>Giáo viên môn GDKT&PL</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/ThayNHQ.jpg?v=1722008828763" alt="Thầy Nguyễn Huy Quang" title = "Thầy Nguyễn Huy Quang">
+                                            <div class="member-info1">
+                                                <h3>Thầy Nguyễn Huy Quang</h3>
+                                                <p1>Giáo viên môn Tin Học</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoJien.png?v=1722008800215" alt="Cô Kon Sơ K'Jiên" title = "Cô Kon Sơ K'Jiên">
+                                            <div class="member-info1">
+                                                <h3>Cô Kon Sơ K'Jiên</h3>
+                                                <p1>Giáo viên môn Lịch Sử</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái </br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNTM2.jpg?v=1722008809920" alt="Cô Nguyễn Thị Mến"title = "Cô Nguyễn Thị Mến">
+                                            <div class="member-info1">
+                                                <h3>Cô Nguyễn Thị Mến</h3>
+                                                <p1>Giáo viên môn Toán</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel1-button right-button" id="nextButton">❯</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="class11" class="info">
+                    <div class="gvhighlighted-text">Lớp 11</div>
+                    <div>
+                        <div class="carousel1">
+                            <button class="carousel1-button left-button" id="prevButton1">❮</button>
+                            <div class="carousel1-container">
+                                <div class="carousel1-slide" id="carouselSlide1">
+                                    <div class="member-card1teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoPTT.png?v=1722008814495" alt="Cô Phan Thị Trang" title = "Cô Phan Thị Trang" >
+                                            <div class="member-info1">
+                                                <h3>Cô Phan Thị Trang</h3>
+                                                <p1>Giáo viên môn Lịch Sử</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card1teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNTM2.jpg?v=1722008809920" alt="Cô Nguyễn Thị Mến" title = "Cô Nguyễn Thị Mến">
+                                            <div class="member-info1">
+                                                <h3>Cô Nguyễn Thị Mến</h3>
+                                                <p1>Giáo viên môn Toán</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card1teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoVMT.PNG?v=1722008818777" alt="Cô Võ Minh Trí" title = "Cô Võ Minh Trí">
+                                            <div class="member-info1">
+                                                <h3>Cô Võ Minh Trí</h3>
+                                                <p1>Giáo viên môn Vật Lý</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card1teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z6029334527885_110427096b568b3e8f9226555a46a99f.jpg?v=1731502425406" alt="Thầy Đinh Tiến Khoa" title = "Thầy Đinh Tiến Khoa">
+                                            <div class="member-info1">
+                                                <h3>Thầy Đinh Tiến Khoa</h3>
+                                                <p1>Giáo viên môn Hóa Học</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card1teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoLTBL.jpg?v=1722008800306" alt="Cô Lê Thị Bích Lan" title = "Cô Lê Thị Bích Lan">
+                                            <div class="member-info1">
+                                                <h3>Cô Lê Thị Bích Lan</h3>
+                                                <p1>Giáo viên môn Ngữ Văn</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card1teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNMT.png?v=1722008801981" alt="Cô Nguyễn Minh Thủy" title = "Cô Nguyễn Minh Thủy">
+                                            <div class="member-info1">
+                                                <h3>Cô Nguyễn Minh Thủy</h3>
+                                                <p1>Giáo viên môn Tiếng Anh</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card1teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/464927103_8775926372469800_7920309586826609002_n.jpg?v=1731502851082" alt="Cô Phạm Nguyệt Quế" title = "Cô Phạm Nguyệt Quế">
+                                            <div class="member-info1">
+                                                <h3>Cô Phạm Nguyệt Quế</h3>
+                                                <p1>Giáo viên môn GDKT&PL</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card1teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/ThayNHQ.jpg?v=1722008828763" alt="Thầy Nguyễn Huy Quang" title = "Thầy Nguyễn Huy Quang">
+                                            <div class="member-info1">
+                                                <h3>Thầy Nguyễn Huy Quang</h3>
+                                                <p1>Giáo viên môn Tin Học</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card1teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoPTT.png?v=1722008814495" alt="Cô Phan Thị Trang" title = "Cô Phan Thị Trang">
+                                            <div class="member-info1">
+                                                <h3>Cô Phan Thị Trang</h3>
+                                                <p1>Giáo viên môn Lịch Sử</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái </br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card1teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNTM2.jpg?v=1722008809920" alt="Cô Nguyễn Thị Mến"title = "Cô Nguyễn Thị Mến">
+                                            <div class="member-info1">
+                                                <h3>Cô Nguyễn Thị Mến</h3>
+                                                <p1>Giáo viên môn Toán</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel1-button right-button" id="nextButton1">❯</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="class12" class="info" style="display:block">
+                    <div class="gvhighlighted-text">Lớp 12</div>
+                    <div>
+                        <div class="carousel1">
+                            <button class="carousel1-button left-button" id="prevButton2">❮</button>
+                            <div class="carousel1-container">
+                                <div class="carousel1-slide" id="carouselSlide2">
+                                    <div class="member-card2teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoJien.png?v=1722008800215" alt="Cô Kon Sơ K'Jiên" title = "Cô Kon Sơ K'Jiên" >
+                                            <div class="member-info1">
+                                                <h3>Cô Kon Sơ J'Jiên</h3>
+                                                <p1>Giáo viên môn Lịch Sử</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card2teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNTM2.jpg?v=1722008809920" alt="Cô Nguyễn Thị Mến" title = "Cô Nguyễn Thị Mến">
+                                            <div class="member-info1">
+                                                <h3>Cô Nguyễn Thị Mến</h3>
+                                                <p1>Giáo viên môn Toán</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card2teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoVMT.PNG?v=1722008818777" alt="Cô Võ Minh Trí" title = "Cô Võ Minh Trí">
+                                            <div class="member-info1">
+                                                <h3>Cô Võ Minh Trí</h3>
+                                                <p1>Giáo viên môn Vật Lý</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card2teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/z6029334527885_110427096b568b3e8f9226555a46a99f.jpg?v=1731502425406" alt="Thầy Đinh Tiến Khoa" title = "Thầy Đinh Tiến Khoa">
+                                            <div class="member-info1">
+                                                <h3>Thầy Đinh Tiến Khoa</h3>
+                                                <p1>Giáo viên môn Hóa Học</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card2teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoLTBL.jpg?v=1722008800306" alt="Cô Lê Thị Bích Lan" title = "Cô Lê Thị Bích Lan">
+                                            <div class="member-info1">
+                                                <h3>Cô Lê Thị Bích Lan</h3>
+                                                <p1>Giáo viên môn Ngữ Văn</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card2teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNMT.png?v=1722008801981" alt="Cô Nguyễn Minh Thủy" title = "Cô Nguyễn Minh Thủy">
+                                            <div class="member-info1">
+                                                <h3>Cô Nguyễn Minh Thủy</h3>
+                                                <p1>Giáo viên môn Tiếng Anh</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card2teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoPNQ.png?v=1722008811687" alt="Cô Phạm Nguyệt Quế" title = "Cô Phạm Nguyệt Quế">
+                                            <div class="member-info1">
+                                                <h3>Cô Phạm Nguyệt Quế</h3>
+                                                <p1>Giáo viên môn GDKT&PL</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card2teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/ThayNHQ.jpg?v=1722008828763" alt="Thầy Nguyễn Huy Quang" title = "Thầy Nguyễn Huy Quang">
+                                            <div class="member-info1">
+                                                <h3>Thầy Nguyễn Huy Quang</h3>
+                                                <p1>Giáo viên môn Tin Học</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card2teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoPTT.png?v=1722008814495" alt="Cô Phan Thị Trang" title = "Cô Phan Thị Trang">
+                                            <div class="member-info1">
+                                                <h3>Cô Phan Thị Trang</h3>
+                                                <p1>Giáo viên môn Lịch Sử</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái </br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="member-card2teacher">
+                                        <div class="member-card1">
+                                            <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/CoNTM2.jpg?v=1722008809920" alt="Cô Nguyễn Thị Mến"title = "Cô Nguyễn Thị Mến">
+                                            <div class="member-info1">
+                                                <h3>Cô Nguyễn Thị Mến</h3>
+                                                <p1>Giáo viên môn Toán</br></p1>
+                                                <p2>Trường THPT Nguyễn Thái Bình</br></p2>
+                                                <button class="detail-button">Chi Tiết</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel1-button right-button" id="nextButton2">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <footer>
+            <div id="countdown-wrapper">
+                <h1>Kỳ thi Tốt nghiệp THPT 2025</h1>
+                <div class = "countdown" id="countdown">
+                    <div class="footer-time-box">
+                        <span id="days">0</span>
+                        <p>Ngày</p>
+                    </div>
+                    <div class="footer-time-box">
+                        <span id="hours">0</span>
+                        <p>Giờ</p>
+                    </div>
+                    <div class="footer-time-box">
+                        <span id="minutes">0</span>
+                        <p>Phút</p>
+                    </div>
+                    <div class="footer-time-box">
+                        <span id="seconds">0</span>
+                        <p>Giây</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="footerif">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2 class="footer-title">Lớp 12A1</h2>
+                <p class="footer-description">Nơi học hỏi, giao lưu và phát triển toàn diện. Hãy cùng chúng tôi xây dựng tương lai!</p>
+            </div>
+            <div class="footer-info">
+                <h3 class="footer-heading">Thông tin liên hệ</h3>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:htd2007thptntb@gmail.com">htd2007thptntb@gmail.com</a></li>
+                    <li><strong>Địa chỉ:</strong> Trường THPT Nguyễn Thái Bình, Đức Trọng, Lâm Đồng</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-heading">Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sự kiện</a></li>
+                    <li><a href="#">Giáo viên</a></li>
+                    <li><a href="#">Thành viên</a></li>
+                    <li><a href="#">Về chúng tôi</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 class="footer-heading">Góp ý</h3>
+                <div class="social-icons">
+                    <p> Nếu bạn có góp ý, vui lòng góp ý cho chúng tôi tại <a target = "_blank" style = "color:rgb(16, 240, 16)" href = "https://docs.google.com/forms/d/e/1FAIpQLSdMtoa7kq2jzonjYrpCQ07q4z9oM7VwYJ3EjbSfvVVL6geZeQ/viewform?usp=sf_link">đây</a>!</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lớp 12A1 Trường THPT Nguyễn Thái Bình. Bản quyền thuộc về lớp 12a1 trường THPT Nguyễn Thái Bình niên khóa 2022 - 2025.</p>
+            <p>Được phát triển bởi: Trọng Đại, Hữu Đạt</p>
+            <p>Sản phẩm mang tính chất tập thể, không dùng cho mục đích kinh doanh và không sao chép dưới mọi hình thức !</p>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+    <script src = "script2.js"></script>
+    <script src = "script3.js"></script>
+</body>
+</html>

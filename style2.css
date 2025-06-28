@@ -1,0 +1,466 @@
+/* CSS Variables cho responsive design */
+:root {
+  /* Base sizes */
+  --base-font-size: 16px;
+  --base-padding: 20px;
+  --base-margin: 20px;
+  --base-border-radius: 10px;
+  
+  /* Carousel */
+  --carousel-item-width: 20%;
+  --carousel-button-size: 40px;
+  --carousel-margin: 10px;
+  
+  /* Member cards */
+  --member-card-padding: 10px;
+  --member-card-margin: 10px;
+  --member-card-width: 277px;
+  --member-card-font-size: 1em;
+  
+  /* Dropdown */
+  --dropdown-padding: 10px 20px;
+  --dropdown-font-size: 16px;
+  --dropdown-min-width: 160px;
+  
+  /* Grid container */
+  --grid-columns: 1fr 1fr 1fr 1fr 1fr;
+  --grid-gap: 1em;
+  --grid-width: 900px;
+  --grid-height: 500px;
+  
+  /* Box sizes */
+  --box-font-size: 24px;
+  --box-padding: 10px 10px 10px 14px;
+  --box-letter-spacing: 4px;
+}
+
+.carousel1 {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel1-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  background-image: url('https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nen.png?v=1722008831929');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel1-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.member-card,
+.member-card1teacher,
+.member-card2teacher {
+  flex: 1 0 var(--carousel-item-width);
+  box-sizing: border-box;
+  padding: var(--member-card-padding);
+  margin: var(--member-card-margin);
+  margin-left: 12px;
+  margin-right: -25px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: var(--base-border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.member-info {
+  margin-top: var(--member-card-margin);
+}
+
+.member-info h3 {
+  margin: var(--member-card-margin) 0 5px;
+  font-size: var(--member-card-font-size);
+}
+
+.detail-button {
+  margin-top: var(--member-card-margin);
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: clamp(12px, 2vw, 14px);
+  transition: background-color 0.3s ease;
+}
+
+.detail-button:hover {
+  background-color: #218838;
+  text-decoration: underline;
+}
+
+.carousel1-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: var(--carousel-button-size);
+  height: var(--carousel-button-size);
+  cursor: pointer;
+  z-index: 1;
+  font-size: clamp(16px, 3vw, 20px);
+}
+
+.left-button {
+  left: 10px;
+}
+
+.right-button {
+  right: 10px;
+}
+
+.member-card.highlight,
+.member-card1teacher.highlight1,
+.member-card2teacher.highlight2 {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+.member-card1 {
+  background-color: #29350d;
+  color: white;
+  border-radius: 20px;
+  padding: var(--member-card-padding);
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: var(--member-card-width);
+  max-width: 100%;
+}
+
+.member-card1 img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.member-info1 h3 {
+  font-size: clamp(14px, 2.5vw, 18px);
+}
+
+.member-info1 p1 {
+  margin: 5px 0;
+  font-size: clamp(12px, 2vw, 16px);
+  font-style: italic;
+}
+
+.member-info1 p2 {
+  margin: 5px 0;
+  font-size: clamp(10px, 1.8vw, 14px);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #218838;
+  color: white;
+  padding: var(--dropdown-padding);
+  min-width: var(--dropdown-min-width);
+  font-size: var(--dropdown-font-size);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: var(--dropdown-min-width);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  font-size: var(--dropdown-font-size);
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.info {
+  margin-top: var(--base-margin);
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
+.containermuc2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--grid-columns);
+  gap: var(--grid-gap);
+  width: var(--grid-width);
+  height: var(--grid-height);
+  max-width: 95vw;
+  transition: all 400ms;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containermuc2:hover .boxmuc2 {
+  filter: grayscale(100%) opacity(24%);
+}
+
+.boxmuc2 {
+  position: relative;
+  background: var(--img) center center;
+  background-size: cover;
+  transition: all 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--base-border-radius);
+}
+
+.containermuc2 .boxmuc2:hover {
+  filter: grayscale(0%) opacity(100%);
+}
+
+.containermuc2:has(.box-1:hover) {
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+.containermuc2:has(.box-2:hover) {
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+
+.containermuc2:has(.box-3:hover) {
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+
+.containermuc2:has(.box-4:hover) {
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+}
+
+.containermuc2:has(.box-5:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+}
+
+.boxmuc2:nth-child(odd) {
+  transform: translateY(-16px);
+}
+
+.boxmuc2:nth-child(even) {
+  transform: translateY(16px);
+}
+
+.boxmuc2::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 20px;
+  background: #000;
+  color: #fff;
+  font-family: 'Figtree', sans-serif;
+  font-size: var(--box-font-size);
+  padding: var(--box-padding);
+  letter-spacing: var(--box-letter-spacing);
+  transform: translateY(60px);
+  opacity: 0;
+  transition: all 400ms;
+  border-radius: 5px;
+}
+
+.boxmuc2:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 400ms;
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 1200px) {
+  :root {
+    --grid-width: 95vw;
+    --grid-height: 400px;
+    --member-card-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --carousel-item-width: 100%;
+    --carousel-button-size: 35px;
+    --member-card-margin: 8px;
+    --member-card-padding: 8px;
+    --dropdown-padding: 8px 16px;
+    --dropdown-font-size: 14px;
+    --dropdown-min-width: 140px;
+    --grid-columns: 1fr 1fr 1fr;
+    --grid-gap: 0.8em;
+    --grid-height: 300px;
+    --box-font-size: 18px;
+    --box-padding: 8px 8px 8px 12px;
+    --box-letter-spacing: 2px;
+  }
+
+  .member-card,
+  .member-card1teacher,
+  .member-card2teacher {
+    margin: var(--member-card-margin) 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .carousel1 {
+    height: auto;
+  }
+
+  .carousel1-button {
+    width: var(--carousel-button-size);
+    height: var(--carousel-button-size);
+  }
+
+  .member-card1 {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .containermuc2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: var(--grid-columns);
+    height: var(--grid-height);
+  }
+
+  .containermuc2:has(.box-1:hover),
+  .containermuc2:has(.box-2:hover),
+  .containermuc2:has(.box-3:hover),
+  .containermuc2:has(.box-4:hover),
+  .containermuc2:has(.box-5:hover) {
+    grid-template-columns: var(--grid-columns);
+  }
+
+  .boxmuc2:nth-child(odd),
+  .boxmuc2:nth-child(even) {
+    transform: translateY(0);
+  }
+
+  .boxmuc2::after {
+    font-size: var(--box-font-size);
+    padding: var(--box-padding);
+    letter-spacing: var(--box-letter-spacing);
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --carousel-item-width: 100%;
+    --carousel-button-size: 30px;
+    --member-card-margin: 5px;
+    --member-card-padding: 5px;
+    --dropdown-padding: 6px 12px;
+    --dropdown-font-size: 12px;
+    --dropdown-min-width: 120px;
+    --grid-columns: 1fr 1fr;
+    --grid-gap: 0.5em;
+    --grid-height: 250px;
+    --box-font-size: 14px;
+    --box-padding: 6px 6px 6px 10px;
+    --box-letter-spacing: 1px;
+  }
+
+  .member-card,
+  .member-card1teacher,
+  .member-card2teacher {
+    flex: 1 0 100%;
+  }
+
+  .containermuc2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-template-columns: var(--grid-columns);
+    height: var(--grid-height);
+  }
+
+  .boxmuc2::after {
+    font-size: var(--box-font-size);
+    padding: var(--box-padding);
+    letter-spacing: var(--box-letter-spacing);
+    bottom: 5px;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  :root {
+    --carousel-item-width: 50%;
+    --grid-height: 200px;
+  }
+
+  .member-card,
+  .member-card1teacher,
+  .member-card2teacher {
+    flex: 1 0 50%;
+  }
+
+  .carousel1 {
+    height: auto;
+  }
+}
+
+/* High DPI displays */
+@media screen and (min-resolution: 2dppx) {
+  .carousel1-container {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .detail-button,
+  .dropdown-content a,
+  .dropbtn {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+
+  .carousel1-button {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .member-card,
+  .member-card1teacher,
+  .member-card2teacher,
+  .carousel1-slide,
+  .boxmuc2,
+  .boxmuc2::after {
+    transition: none;
+  }
+}

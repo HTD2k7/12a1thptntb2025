@@ -1,0 +1,512 @@
+/* CSS Variables cho responsive design */
+:root {
+  /* Base sizes */
+  --base-font-size: 16px;
+  --base-padding: 20px;
+  --base-margin: 20px;
+  --base-border-radius: 10px;
+  
+  /* Container */
+  --container-max-width: 800px;
+  --container-padding: 20px;
+  
+  /* Login box */
+  --login-box-width: 90%;
+  --login-box-max-width: 400px;
+  --login-box-padding: 20px;
+  
+  /* School name */
+  --school-name-font-size: 5em;
+  --school-name-top: 20px;
+  
+  /* Welcome box */
+  --welcome-box-padding: 20px;
+  --welcome-box-margin: 20px;
+  --welcome-img-height: 400px;
+  
+  /* Contact info */
+  --contact-font-size: 14px;
+  --contact-margin-top: 0px;
+  
+  /* Form elements */
+  --input-padding: 10px;
+  --input-margin: 15px;
+  --input-border-radius: 5px;
+  --button-padding: 10px;
+  
+  /* Modal */
+  --modal-width: 300px;
+  --modal-padding: 20px;
+  
+  /* Watermark */
+  --watermark-font-size: 12px;
+  --watermark-bottom: 10px;
+  --watermark-right: 10px;
+  
+  /* Colors */
+  --primary-color: #45592a;
+  --hover-color: #4a6e4b;
+  --text-color: #333;
+  --border-color: #ccc;
+  --white: #ffffff;
+  --overlay-color: rgba(0, 0, 0, 0.5);
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  font-size: var(--base-font-size);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-image: url('https://cdn.glitch.global/badaddb2-a1e2-49ce-ab6c-8675a5d5a81b/Anh%20truong.jfif?v=1722002747153');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: var(--container-padding);
+  box-sizing: border-box;
+}
+
+.loading-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-overlay img {
+  width: clamp(50px, 10vw, 75px);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--border-color);
+  border-radius: var(--base-border-radius);
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  max-width: var(--container-max-width);
+  width: 100%;
+}
+
+.swal-overlay {
+  z-index: 9999;
+}
+
+.swal2-popup {
+  z-index: 10000;
+}
+
+.login-box {
+  background-color: white;
+  padding: var(--login-box-padding);
+  border-radius: var(--base-border-radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: var(--login-box-width);
+  max-width: var(--login-box-max-width);
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box h2 {
+  margin-bottom: var(--base-margin);
+  color: var(--primary-color);
+  font-size: clamp(1.2em, 4vw, 1.5em);
+  text-align: center;
+}
+
+.textbox {
+  margin-bottom: var(--input-margin);
+}
+
+.textbox input {
+  width: 100%;
+  padding: var(--input-padding);
+  margin-bottom: var(--input-margin);
+  border: 1px solid var(--border-color);
+  border-radius: var(--input-border-radius);
+  font-size: clamp(14px, 3vw, 16px);
+  box-sizing: border-box;
+}
+
+.remember {
+  margin-bottom: 10px;
+  font-size: clamp(12px, 2.5vw, 14px);
+}
+
+.forgot {
+  margin-bottom: var(--base-margin);
+  font-size: clamp(12px, 2.5vw, 14px);
+}
+
+.forgot a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.btn {
+  padding: var(--button-padding);
+  border: none;
+  border-radius: var(--input-border-radius);
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  font-size: clamp(14px, 3vw, 16px);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+.welcome-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--welcome-box-padding);
+  margin-left: var(--welcome-box-margin);
+  flex: 1;
+}
+
+.welcome-box img {
+  max-width: 100%;
+  height: var(--welcome-img-height);
+  border-radius: var(--base-border-radius);
+  object-fit: cover;
+}
+
+.school-name {
+  position: absolute;
+  top: var(--school-name-top);
+  width: 100%;
+  text-align: center;
+  font-size: clamp(2em, 8vw, var(--school-name-font-size));
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Dancing Script', cursive;
+  z-index: 10;
+}
+
+.contact-info {
+  margin-left: var(--welcome-box-margin);
+  margin-top: var(--contact-margin-top);
+  text-align: center;
+  font-size: var(--contact-font-size);
+  color: var(--text-color);
+}
+
+.img-set {
+  height: clamp(60px, 12vw, 80px);
+  width: clamp(150px, 30vw, 200px);
+  border-radius: 15%;
+}
+
+.contact-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+#custom-alert {
+  text-align: center;
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--modal-width);
+  max-width: 90vw;
+  padding: var(--modal-padding);
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: var(--base-border-radius);
+  z-index: 10000;
+}
+
+#custom-alert h2 {
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: clamp(16px, 4vw, 20px);
+}
+
+#custom-alert p {
+  margin: 0 0 20px;
+  font-size: clamp(14px, 3vw, 16px);
+}
+
+#custom-alert button {
+  padding: var(--button-padding) var(--base-margin);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--input-border-radius);
+  cursor: pointer;
+  font-size: clamp(14px, 3vw, 16px);
+}
+
+#custom-alert button:hover {
+  background-color: var(--hover-color);
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-color);
+  z-index: 999;
+}
+
+.watermark {
+  position: absolute;
+  bottom: var(--watermark-bottom);
+  right: var(--watermark-right);
+  font-size: var(--watermark-font-size);
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+}
+
+#refreshButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#refreshButton img {
+  width: clamp(20px, 4vw, 24px);
+  height: auto;
+}
+
+/* Canvas styling */
+#captchaCanvas {
+  border: 1px solid var(--border-color);
+  border-radius: var(--input-border-radius);
+  margin: 5px 0;
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 768px) {
+  :root {
+    --container-padding: 15px;
+    --login-box-padding: 15px;
+    --welcome-box-padding: 15px;
+    --welcome-box-margin: 15px;
+    --welcome-img-height: 300px;
+    --school-name-font-size: 3em;
+    --contact-font-size: 12px;
+    --input-padding: 8px;
+    --input-margin: 12px;
+    --button-padding: 8px;
+    --modal-width: 280px;
+    --modal-padding: 15px;
+  }
+
+  .container {
+    flex-direction: column;
+    max-width: 95vw;
+  }
+
+  .welcome-box {
+    margin-left: 0;
+    margin-top: 15px;
+    order: -1;
+  }
+
+  .welcome-box img {
+    height: var(--welcome-img-height);
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contact-info {
+    margin-left: 0;
+    margin-top: 15px;
+    padding: 0 15px;
+  }
+
+  .school-name {
+    font-size: clamp(1.5em, 6vw, 2.5em);
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --container-padding: 10px;
+    --login-box-padding: 10px;
+    --welcome-box-padding: 10px;
+    --welcome-box-margin: 10px;
+    --welcome-img-height: 250px;
+    --school-name-font-size: 2em;
+    --contact-font-size: 11px;
+    --input-padding: 6px;
+    --input-margin: 10px;
+    --button-padding: 6px;
+    --modal-width: 260px;
+    --modal-padding: 12px;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: none;
+  }
+
+  .textbox input {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  .welcome-box img {
+    height: var(--welcome-img-height);
+  }
+
+  .img-set {
+    height: 50px;
+    width: 120px;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  :root {
+    --welcome-img-height: 200px;
+    --school-name-font-size: 2em;
+    --school-name-top: 5px;
+  }
+
+  .container {
+    flex-direction: row;
+    height: 90vh;
+    max-height: 400px;
+  }
+
+  .welcome-box {
+    order: 0;
+    margin-left: 10px;
+    margin-top: 0;
+  }
+
+  .welcome-box img {
+    height: 100%;
+    max-height: 300px;
+  }
+
+  .login-box {
+    max-width: 300px;
+  }
+
+  .login-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  .textbox {
+    margin-bottom: 8px;
+  }
+
+  .textbox input {
+    padding: 6px;
+    margin-bottom: 8px;
+  }
+
+  .remember,
+  .forgot {
+    margin-bottom: 8px;
+  }
+
+  .btn {
+    padding: 6px;
+  }
+
+  .contact-info {
+    margin-top: 10px;
+    font-size: 11px;
+  }
+}
+
+/* High DPI displays */
+@media screen and (min-resolution: 2dppx) {
+  .login-container {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .btn,
+  #custom-alert button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .textbox input {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  #refreshButton {
+    padding: 8px;
+  }
+
+  #refreshButton img {
+    width: 28px;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  #custom-alert button,
+  .contact-link {
+    transition: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .login-container {
+    background: white;
+  }
+
+  .school-name,
+  .watermark {
+    display: none;
+  }
+
+  .container {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+}

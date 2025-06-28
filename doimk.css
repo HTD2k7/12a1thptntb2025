@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rules-container {
+  max-height: 100px; /* Chiều cao cố định */
+  overflow-y: auto; /* Cuộn theo chiều dọc nếu vượt quá chiều cao cố định */
+  margin-top: 10px;
+}
+
+input[type='password'] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.rule {
+  color: #f0f0f0;
+  text-align: left;
+  margin: 10px 0;
+  padding: 10px;
+  background: #df2323;
+  border: 1px solid #b3d4fc;
+  border-radius: 5px;
+  transition: background-color 1s ease, opacity 1s ease;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -ms-transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+}
+
+.rule.met {
+  background-color: #1ecf48;
+}
+
+.input-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}

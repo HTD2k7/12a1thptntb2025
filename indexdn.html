@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/head.jpg?v=1722005383191" type="image/jpg">
+    <title>Trang Đăng Nhập</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "styledn.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src = "scriptdn.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class = "login-container">
+  <audio src = "https://cdn.glitch.me/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/T%E1%BB%95ng%20h%C6%A1p%20Nh%C6%B0ng%20bai%20hat%20trung%20qu%C3%B4c%20kh%C3%B4ng%20l%C6%A1i%20hay%20nh%C3%A2t%20tik%20tok%20n%C4%83m%202020%20-%20Ti%C3%AAc%20Tra%20sao.....mp3?v=1722088776735" loop autoplay></audio>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <div class = "school-name">Trường THPT Nguyễn Thái Bình</div>
+    <div class="container">
+        <div class="login-box">
+            <form onsubmit="return validateLogin()">
+                <h2>Đăng Nhập</h2>
+                <div class="textbox">
+                    <input type="text" placeholder="Tên đăng nhập" id="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Mật khẩu" id="password" required>
+                </div>
+                <div class = textbox>
+                    <canvas id="captchaCanvas"></canvas>
+                    <button id="refreshButton" title="Refresh CAPTCHA">
+                        <i class="fas fa-sync"></i>
+                    </button>
+                    <input type="text" id="captchaInput" placeholder="Enter CAPTCHA" required>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="remembercheck" name="remember"> Ghi nhớ đăng nhập
+                </div>
+                <div class="forgot">
+                    <a href="#" class="contact-link" onclick="showCustomAlert()">Quên mật khẩu?</a>
+                </div>
+                <button type="submit" class="btn">Đăng nhập</button>
+            </form>
+            <div class="loading-overlay" id="loadingOverlay">
+                <img src="https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/loading.gif?v=1722004456762" alt="Loading...">
+            </div>
+        </div>
+        <div class="welcome-box">
+            <img src=https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Anh1.jfif?v=1722005378153" alt="Chào mừng đến lớp 12A1" title="Img from CFS NTB">
+        </div>
+    </div>
+    <div class="contact-info">
+        <p style = "font-size: medium;"><b>Liên hệ với chúng tôi tại: </p> Facebook: <a href="https://www.facebook.com/tuqn.chau.5">Trọng Đại</a>, <a href="https://www.facebook.com/profile.php?id=100060484149328">Hữu Đạt</a> <br> Gmail: htd2007thptntb@gmail.com </b></p>
+        <img src = "https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/cach-huy-lien-ket-facebook-voi-gmail-removebg-preview.png?v=1722005380826" class = "img-set">
+        <h4> <a href = "doimk.html" target = "_blank" style = "color:white"> Hỗ trợ đổi mật khẩu!</a> </h4> 
+    </div>
+    <div id="overlay"></div>
+    <div id="custom-alert">
+        <h2>Thông Báo</h2>
+        <p>Vui lòng liên hệ với chúng tôi để được hỗ trợ khôi phục tài khoản của bạn!</p>
+        <button onclick="closeCustomAlert()">OK</button>
+    </div>
+    <div class = "watermark">@It will be a long time before we meet again.</div>
+</body>
+</html>
