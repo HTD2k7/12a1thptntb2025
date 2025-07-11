@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const loggedInAbout = document.getElementById('about-logged-in');
   const loggedOutTeacher = document.getElementById('teacher-logged-out');
   const loggedInTeacher = document.getElementById('teacher-logged-in');
+  const loggedInbuble = document.getElementById('buble');
   const userAvatars = {
     BBA12A12025:
       'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nam1.jfif?v=1722005906914',
@@ -171,6 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loggedOutTeacher.style.display = 'none';
     loggedInMembers.style.display = 'inline';
     loggedOutMembers.style.display = 'none';
+    loggedInbuble.style.display = 'inline';
   }
 
   // Xử lý sự kiện khi nhấp vào nút đăng xuất
@@ -205,13 +207,14 @@ document.addEventListener('DOMContentLoaded', () => {
           loggedOutTeacher.style.display = 'inline';
           loggedInMembers.style.display = 'none';
           loggedOutMembers.style.display = 'inline';
+          loggedInbuble.style.display = 'none';
         });
       }
     });
   });
   function mapUsernameToFullName(username) {
     const userMap = {
-      NQA12A12025: 'Nguyễn Quốc Anh',
+      DQA12A12025: 'Dương Quốc Anh',
       NTM12A12025: 'Nguyễn Thị Mến',
       BBA12A12025: 'Biện Bình An',
       PQTA12A12025: 'Phạm Quang Tuấn An',

@@ -892,3 +892,7 @@ function sumOfNumbersInPassword(password) {
     return 0;
   }
 }
+
+document.getElementById("back-button").addEventListener("click", function () {
+  window.location.href = 'indexdn.html';
+});

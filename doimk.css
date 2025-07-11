@@ -15,6 +15,27 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 8px 14px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+#back-button:hover {
+  background-color: #0056b3;
+}
+
+
 .rules-container {
   max-height: 100px; /* Chiều cao cố định */
   overflow-y: auto; /* Cuộn theo chiều dọc nếu vượt quá chiều cao cố định */

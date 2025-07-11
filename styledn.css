@@ -94,7 +94,7 @@ body {
 }
 
 .loading-overlay img {
-  width: clamp(50px, 10vw, 75px);
+  width: clamp(50px, 10vw, 300px);
 }
 
 .container {
@@ -107,6 +107,10 @@ body {
   background-color: white;
   max-width: var(--container-max-width);
   width: 100%;
+  -webkit-border-radius: var(--base-border-radius);
+  -moz-border-radius: var(--base-border-radius);
+  -ms-border-radius: var(--base-border-radius);
+  -o-border-radius: var(--base-border-radius);
 }
 
 .swal-overlay {
@@ -395,63 +399,8 @@ body {
     height: 50px;
     width: 120px;
   }
-}
-
-/* Landscape orientation for mobile */
-@media screen and (max-width: 768px) and (orientation: landscape) {
-  :root {
-    --welcome-img-height: 200px;
-    --school-name-font-size: 2em;
-    --school-name-top: 5px;
-  }
-
-  .container {
-    flex-direction: row;
-    height: 90vh;
-    max-height: 400px;
-  }
-
-  .welcome-box {
-    order: 0;
-    margin-left: 10px;
-    margin-top: 0;
-  }
-
-  .welcome-box img {
-    height: 100%;
-    max-height: 300px;
-  }
-
-  .login-box {
-    max-width: 300px;
-  }
-
-  .login-box h2 {
-    margin-bottom: 10px;
-    font-size: 1.2em;
-  }
-
-  .textbox {
-    margin-bottom: 8px;
-  }
-
-  .textbox input {
-    padding: 6px;
-    margin-bottom: 8px;
-  }
-
-  .remember,
-  .forgot {
-    margin-bottom: 8px;
-  }
-
-  .btn {
-    padding: 6px;
-  }
-
-  .contact-info {
-    margin-top: 10px;
-    font-size: 11px;
+  .loading-overlay img {
+  width: clamp(50px, 10vw, 200px);
   }
 }
 
@@ -508,5 +457,45 @@ body {
   .container {
     box-shadow: none;
     border: 1px solid #000;
+  }
+}
+
+@media screen and (max-height: 700px) and (orientation: landscape) {
+  .login-box {
+    padding: 10px;
+    width: 80%;
+    max-width: 350px;
+  }
+  .welcome-box img {
+    height: 320px;
+  }
+  .school-name {
+    font-size: clamp(1.5em, 5.5vw, 3em);
+    top: 2px;
+  }
+  .textbox input {
+    font-size: 14px;
+    padding: 3px;
+    margin-bottom: 2px;
+  }
+  .btn {
+    font-size: 15px;
+    padding: 6px 8px;
+    min-height: 35px;
+  }
+  .login-box h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  .welcome-box {
+    margin-left: 5px;
+    margin-top: 0;
+    padding: 5px;
+  }
+  .container {
+    flex-direction: row;
+    height: 90vh;
+    max-height: 350px;
+    padding: 5px;
   }
 }
