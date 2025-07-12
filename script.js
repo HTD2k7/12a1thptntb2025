@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
       HTTT12A12025: 'Huỳnh Thị Thanh Tuyền',
       VBT12A12025: 'Vương Bạch Tuyết',
       TKV12A12025: 'Tạ Khánh Vy',
-      DTNY12A12025: 'Đào Thị Như Ý',
+      ĐTNY12A12025: 'Đào Thị Như Ý',
       PPHY12A12025: 'Phạm Phương Hải Yến',
     };
 
