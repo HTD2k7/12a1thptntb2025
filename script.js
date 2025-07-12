@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
       NTTTS12A12025: 'Nông Thị Thanh Thúy',
       NTUT12A12025: 'Nguyễn Thị Uyên Thy',
       PLKT12A12025: 'Phan Lê Kim Trang',
-      DHT12A12025: 'Đinh Huyền Trân',
+      ĐHT12A12025: 'Đinh Huyền Trân',
       HTT12A12025: 'Hoàng Thanh Tuấn',
       HTTT12A12025: 'Huỳnh Thị Thanh Tuyền',
       VBT12A12025: 'Vương Bạch Tuyết',
