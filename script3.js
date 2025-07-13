@@ -230,6 +230,8 @@ const lines = [
       const coupleText = document.getElementById("coupleText");
       const coupleBox = document.getElementById("coupleBox");
       const bestieBox = document.getElementById("bestieBox");
+      const containerdvn = document.getElementById("imageContainerdvn");
+      const iconsdvn = document.querySelectorAll(".icondvn");
 
 
       if (input === "19/9") {
@@ -245,11 +247,19 @@ const lines = [
         bestieBox.classList.add("show-box");
         showLinescp(bestieLines, "bestieMessage");
       }
+      else if(input == "mnganxinhdep"){
+        containerdvn.style.display = "block";
+        containerdvn.style.animation = "fadeIn 2s forwards";
+        iconsdvn.forEach(icon => icon.classList.add("show-icondvn"));
+      }
       else {
         coupleDiv.classList.remove("couple-show");
         coupleText.innerHTML = "";
         coupleBox.classList.remove("show-box");
         bestieBox.classList.remove("show-box");
+        containerdvn.style.display = "none";
+        containerdvn.style.opacity = 0;
+        iconsdvn.forEach(icondvn => icondvn.classList.remove("show-icondvn"));
       }
     }
 

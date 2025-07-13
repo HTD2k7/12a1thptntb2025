@@ -1142,6 +1142,7 @@ footer .countdown {
     }
 
     .containerthu {
+
       display: flex;
       flex-direction: column;
       gap: 30px; /* khoảng cách giữa các thư */
@@ -1153,6 +1154,7 @@ footer .countdown {
       position: relative;
       width: 90%;
       max-width: 850px;
+      margin: 0 auto; /* 🌟 Căn giữa theo chiều ngang */
     }
 
     .envelope {
@@ -1410,3 +1412,146 @@ footer .countdown {
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
+
+
+    .dvn {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffefb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .dvn h1 {
+      color: #ff6f61;
+      margin-bottom: 20px;
+      animation: colorCycledvn 6s infinite;
+    }
+
+    @keyframes colorCycledvn {
+      0% { color: #ff6f61; }
+      25% { color: #ffb74d; }
+      50% { color: #4dd0e1; }
+      75% { color: #9575cd; }
+      100% { color: #ff6f61; }
+    }
+
+    .image-containerdvn {
+  position: relative;
+  max-width: 1200px;
+  margin-top: 30px;
+  display: none;
+  opacity: 0;
+  animation: fadeIndvn 4s forwards;
+}
+
+.image-containerdvn img {
+  width: 110%;
+  display: block; /* loại bỏ khoảng trắng dư dưới ảnh */
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 16px;
+  border: 6px solid;
+  border-image: linear-gradient(
+    270deg,
+    #ffb6c1,
+    #e0bbff,
+    #b2f2bb,
+    #fff3b0,
+    #bae7ff,
+    #ffb6c1
+  ) 1;
+  animation: borderFlowdvn 8s linear infinite;
+}
+
+    @keyframes fadeIndvn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes borderFlowdvn {
+      0% {
+        border-image-source: linear-gradient(270deg, #ffb6c1, #e0bbff, #b2f2bb, #fff3b0, #bae7ff, #ffb6c1);
+      }
+      50% {
+        border-image-source: linear-gradient(270deg, #bae7ff, #fff3b0, #b2f2bb, #e0bbff, #ffb6c1, #bae7ff);
+      }
+      100% {
+        border-image-source: linear-gradient(270deg, #ffb6c1, #e0bbff, #b2f2bb, #fff3b0, #bae7ff, #ffb6c1);
+      }
+    }
+
+    .icondvn {
+      position: absolute;
+      font-size: 28px;
+      opacity: 0;
+      animation: floatUpdvn 6s linear infinite;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .show-icondvn {
+      opacity: 1;
+    }
+
+    @keyframes floatUpdvn {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-200px) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    .icondvn1 { left: 15%; bottom: 10px; animation-delay: 0s; }
+    .icondvn2 { left: 35%; bottom: 10px; animation-delay: 1s; }
+    .icondvn3 { left: 55%; bottom: 10px; animation-delay: 2s; }
+    .icondvn4 { left: 75%; bottom: 10px; animation-delay: 3s; }
+
+    .corner-icondvn {
+      position: absolute;
+      top: 10px;
+      font-size: 28px;
+      animation: pulsedvn 2s infinite ease-in-out;
+      z-index: 10;
+    }
+
+    .corner-icondvn.left {
+      left: 10px;
+    }
+
+    .corner-icondvn.right {
+      right: 10px;
+    }
+
+    @keyframes pulsedvn {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.5);
+        opacity: 0.8;
+      }
+    }
+
+.click-hint {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 8px;
+  font-style: italic;
+  opacity: 0.8;
+  animation: pulselt 2s infinite;
+  -webkit-animation: pulselt 2s infinite;
+}
+
+@keyframes pulselt {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
