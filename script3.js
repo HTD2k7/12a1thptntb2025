@@ -278,3 +278,59 @@ const lines = [
       "Không rực rỡ như nắng – mà sắc lạnh như ánh bạc dưới trăng.",
       "Không náo nhiệt – mà khiến người khác không thể không để ý.",
     ];
+
+
+    const lightboxlb = document.getElementById('lightboxlb');
+    const lightboxlbImg = lightboxlb.querySelector('img');
+    document.querySelectorAll('.gallerylb img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxlbImg.src = img.src;
+        lightboxlb.classList.add('active');
+      });
+    });
+    lightboxlb.addEventListener('click', () => {
+      lightboxlb.classList.remove('active');
+    });
+
+    const images = [
+      "https://i.postimg.cc/rpCfmh0H/0165b5c3-3909-4965-8d17-2b5326823d84.jpg",
+      "https://i.postimg.cc/ZqhfJkR3/02f56871-b029-44f1-a2fe-2e3c83b397db.jpg",
+      "https://i.postimg.cc/wMBfnhBG/20240522-174404-100.jpg",
+      "https://i.postimg.cc/pXpcZY49/3a41f40e-cc4b-4587-9d2a-e1a0a5eba9d2.jpg",
+      "https://i.postimg.cc/8zvK8k1N/ddb353d1-0f51-48ec-8cd1-14e2735cff34.jpg",
+      "https://i.postimg.cc/gjM50g5p/FB-IMG-1750229561631.jpg",
+      "https://i.postimg.cc/VLpGH0PK/fe910eb9-730b-4807-9ea6-6c1ac75cd656.jpg",
+      "https://i.postimg.cc/wTGZ8bLc/IMG-1748614430855-1748614506233-3.jpg",
+      "https://i.postimg.cc/2SLJzFxp/IMG-20240205-145623-2.jpg",
+      "https://i.postimg.cc/KjsqbRkv/IMG-20240226-191528.jpg",
+      "https://i.postimg.cc/MGyFB64d/IMG-20241016-155504-2.jpg",
+      "https://i.postimg.cc/ZR4DxkzZ/IMG-20241019-130304-2.jpg",
+      "https://i.postimg.cc/44wjw330/IMG-20241211-125657-2.jpg",
+      "https://i.postimg.cc/gJHQCzHn/IMG-20241211-125755-2.jpg",
+      "https://i.postimg.cc/9FMKkjRQ/IMG-20250404-201813.jpg",
+      "https://i.postimg.cc/6QRDhL7V/IMG-20250530-211527-2.jpg",
+      "https://i.postimg.cc/1zxd4nW8/IMG-20250613-152843.jpg",
+      "https://i.postimg.cc/NFGSY3db/IMG-20250613-153019.jpg",
+      "https://i.postimg.cc/dtVcKyXv/IMG-20250614-201213.jpg",
+      "https://i.postimg.cc/gJW1tXRC/Screenshot-20240514-211148.png",
+      "https://i.postimg.cc/QdBLFrhy/z5832088742951-d7ae53d379668fbbf263d0c07f89600e.jpg",
+      "https://i.postimg.cc/fTqnWbnd/z6238526681528-1df5292d77adbd90a2ca22f2c7f9d5ed.jpg",
+      "https://i.postimg.cc/Gm6WYSph/z6475612769014-dacfbaa72b7016763eb7053465ade8e1.jpg",
+      "https://i.postimg.cc/cHxX8QfL/z6700973003164-1361c2c30bfbbb334e08f9fdb5751536.jpg",
+      "https://i.postimg.cc/1tvM0fKc/z6700973007609-4998ea1046b286e6b9c21e6fe91cfbd6.jpg",
+      "https://i.postimg.cc/3NW1tYSM/z6701384002232-5ec9762e01ddf7dfbe2ea02ee15f5245.jpg",
+      "https://i.postimg.cc/C17rvvw8/z6705505907575-5990bc9948c96037c5c99038d73f2ffb.jpg",
+      "https://i.postimg.cc/RCPbKbs5/z6762158241983-e4b5e9fac98c8aa398933c69854ec37e.jpg",
+      "https://i.postimg.cc/RCRx8RgX/z6762375808166-6266914839fe3a2f0c69ff737c12a382.jpg"
+    ];
+
+    const tracktt = document.getElementById("tracktt");
+    // Append all images twice for smooth looping
+    for (let i = 0; i < 2; i++) {
+      images.forEach((src, index) => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = `Ảnh ${index + 1}`;
+        tracktt.appendChild(img);
+      });
+    }

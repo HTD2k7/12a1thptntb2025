@@ -1240,3 +1240,173 @@ footer .countdown {
       text-align: right;
       opacity: 0.7;
     }
+    .luubut {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+    .luubut h1 {
+      color: #ff6f61;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 36px;
+      animation: colorCyclelb 6s infinite;
+    }
+    @keyframes colorCyclelb {
+      0% { color: #ff6f61; }
+      25% { color: #ffb74d; }
+      50% { color: #4dd0e1; }
+      75% { color: #9575cd; }
+      100% { color: #ff6f61; }
+    }
+    p.subtitlelb {
+      font-size: 20px;
+      color: #444;
+      margin-bottom: 30px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .gallerylb {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      width: 100%;
+      max-width: 1000px;
+      animation: fadeIn 2s ease-in;
+    }
+    .gallerylb img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid transparent;
+      padding: 3px;
+      background-image: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+      background-size: 600% 600%;
+      animation: borderMovelb 5s linear infinite;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+    .gallerylb img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    @keyframes borderMovelb {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .lightboxlb {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .lightboxlb img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 12px;
+    }
+    .lightboxlb.active {
+      display: flex;
+    }
+    .lightboxlb::after {
+      content: "✕";
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 32px;
+      color: white;
+      cursor: pointer;
+    }
+    .footerlb {
+      margin-top: 40px;
+      font-style: italic;
+      color: #fff;
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+      padding: 10px 20px;
+      border-radius: 12px;
+      animation: floatlb 4s ease-in-out infinite;
+    }
+    @keyframes floatlb {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+    .leaflb {
+      position: absolute;
+      animation: floatlb 4s infinite ease-in-out;
+      font-size: 24px;
+      opacity: 0.8;
+    }
+    .leaf1 { top: 20px; left: 20px; animation-delay: 0s; }
+    .leaf2 { top: 80px; right: 40px; animation-delay: 1s; }
+    .leaf3 { bottom: 60px; left: 60px; animation-delay: 2s; }
+    .leaf4 { bottom: 100px; right: 80px; animation-delay: 3s; }
+
+    .tapthe {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffefb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .tapthe h1 {
+      font-size: 34px;
+      margin-bottom: 16px;
+      color: #ff6f61;
+      animation: colorCyclett 6s infinite;
+    }
+    @keyframes colorCyclett {
+      0% { color: #ff6f61; }
+      25% { color: #ffb74d; }
+      50% { color: #4dd0e1; }
+      75% { color: #9575cd; }
+      100% { color: #ff6f61; }
+    }
+    .slider-containertt {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .slider-tracktt {
+      display: flex;
+      width: max-content;
+      animation: scrollLefttt 180s linear infinite;
+    }
+    .slider-tracktt img {
+      height: 300px;
+      margin: 0 8px;
+      border-radius: 10px;
+      border: 3px solid;
+      border-image: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #facc15) 1;
+      transition: transform 0.3s ease;
+    }
+    .slider-tracktt img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    @keyframes scrollLefttt {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }

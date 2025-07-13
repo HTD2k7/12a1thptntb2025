@@ -1340,7 +1340,7 @@ table tr:nth-child(even) {
     left: -50px;
     font-size: 10px;
     padding: 6px 50px 6px 12px;
-    max-width: 200px;
+    max-width: 210px;
     display: flex;
     height: 28px;
     overflow: hidden;
