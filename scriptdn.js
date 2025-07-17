@@ -88,7 +88,7 @@ function validateLogin() {
         var loadingOverlay = document.getElementById('loadingOverlay');
         loadingOverlay.style.display = 'flex';
         setTimeout(() => {
-          window.location.href = 'index.html';
+          window.location.href = 'indexchinh.html';
         }, 2000);
       }
     });
