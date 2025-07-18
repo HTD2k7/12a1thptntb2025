@@ -104,6 +104,24 @@ document.addEventListener('DOMContentLoaded', () => {
       'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
     PPHY12A12025:
       'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
+    NTM12A12025:
+      'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
+    LTBL12A12025:
+      'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
+    NHQ12A12025:
+      'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nam1.jfif?v=1722005906914',
+    ĐTK12A12025:
+      'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nam1.jfif?v=1722005906914',
+    VMT12A12025:
+      'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
+    BVN12A12025:
+      'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nam1.jfif?v=1722005906914',
+    LTQN12A12025:
+      'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
+    NMTA12A12025:
+      'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
+    KSJ12A12025:
+      'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
   };
   // Xử lý scroll để đánh dấu các mục điều hướng active
   window.addEventListener('scroll', () => {
@@ -217,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function mapUsernameToFullName(username) {
     const userMap = {
       DQA12A12025: 'Dương Quốc Anh',
-      NTM12A12025: 'Nguyễn Thị Mến',
+      NTM12A12025: 'Cô Nguyễn Thị Mến',
       BBA12A12025: 'Biện Bình An',
       PQTA12A12025: 'Phạm Quang Tuấn An',
       VLNB12A12025: 'Võ Lê Ngọc Bích',
@@ -261,6 +279,14 @@ document.addEventListener('DOMContentLoaded', () => {
       TKV12A12025: 'Tạ Khánh Vy',
       ĐTNY12A12025: 'Đào Thị Như Ý',
       PPHY12A12025: 'Phạm Phương Hải Yến',
+      LTBL12A12025: 'cô Lê Thị Bích Lan',
+      NHQ12A12025: 'thầy Nguyễn Huy Quang',
+      ĐTK12A12025: 'thầy Đinh Tiến Khoa',
+      VMT12A12025: 'cô Võ Minh Trí',
+      BVN12A12025: 'thầy Biện Văn Nam',
+      LTQN12A12025: 'cô Lê Thị Quỳnh Nga',
+      NMTA12A12025: 'cô Nguyễn Minh Thủy',
+      KSJ12A12025: "cô Kon Sơ K'Jiên",
     };
 
     return userMap[username] || username;
