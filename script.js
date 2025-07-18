@@ -90,6 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
       'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
     NTTTF12A12025:
       'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
+    NTUT12A12025:
+      'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
     PLKT12A12025:
       'https://cdn.glitch.global/4ea9b6bc-9a3c-4d0f-a608-cde18f3c3444/Nu1.jfif?v=1722009975415',
     ĐHT12A12025:
@@ -248,13 +250,13 @@ document.addEventListener('DOMContentLoaded', () => {
       BTHT12A12025: 'Bùi Thị Hồng Thanh',
       NPT12A12025: 'Nguyễn Phương Thảo',
       NTTTF12A12025: 'Nguyễn Thị Thanh Thùy',
-      HTTT12A12025: 'Huỳnh Thị Thu Thủy',
+      HTTTR12A12025: 'Huỳnh Thị Thu Thủy',
       NTTTS12A12025: 'Nông Thị Thanh Thúy',
       NTUT12A12025: 'Nguyễn Thị Uyên Thy',
       PLKT12A12025: 'Phan Lê Kim Trang',
       ĐHT12A12025: 'Đinh Huyền Trân',
       HTT12A12025: 'Hoàng Thanh Tuấn',
-      HTTT12A12025: 'Huỳnh Thị Thanh Tuyền',
+      HTTTF12A12025: 'Huỳnh Thị Thanh Tuyền',
       VBT12A12025: 'Vương Bạch Tuyết',
       TKV12A12025: 'Tạ Khánh Vy',
       ĐTNY12A12025: 'Đào Thị Như Ý',
