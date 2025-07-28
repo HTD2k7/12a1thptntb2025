@@ -234,12 +234,7 @@ const lines = [
       const iconsdvn = document.querySelectorAll(".icondvn");
 
 
-      if (input === "19/9") {
-        coupleDiv.classList.add("couple-show");
-        coupleText.innerHTML = "";
-        showLines();
-      }
-      else if (input == "10/12"){
+      if (input == "10/12"){
         coupleBox.classList.add("show-box");
         showLinescp(coupleLines, "coupleMessage");
       }
@@ -253,8 +248,6 @@ const lines = [
         iconsdvn.forEach(icon => icon.classList.add("show-icondvn"));
       }
       else {
-        coupleDiv.classList.remove("couple-show");
-        coupleText.innerHTML = "";
         coupleBox.classList.remove("show-box");
         bestieBox.classList.remove("show-box");
         containerdvn.style.display = "none";
