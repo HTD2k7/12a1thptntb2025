@@ -25,7 +25,7 @@ let x = setInterval(function () {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById('countdown').innerHTML =
-      'Đã đến thời điểm công bố điểm tốt nghiệm THPT 2025 rồi! Mong rằng dù cho kết quả như thế nào thì các bạn hãy luôn tự hào rằng bản thân mình đã cố gắng hết sức rồi, không có gì phải hối tiếc nhé!';
+      'Chúc toàn bộ 12A1-THPT Nguyễn Thái Bình thật thành công và hạnh phúc trên chặng đường tương lai của bản thân!';
   }
 }, 1000);
 
